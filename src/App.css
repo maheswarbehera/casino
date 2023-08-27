@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Akira Expanded';
+  src: url('../src/web/fonts/AkiraExpanded-SuperBold.woff2') format('woff2'),
+      url('../src/web/fonts/AkiraExpanded-SuperBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Azonix';
+  src: url('../src/web/fonts/AzonixRegular.woff2') format('woff2'),
+      url('../src/web/fonts/AzonixRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+body{
+  background: var(--secondary, #111421);
+  color: #fff;
+}
+p{
+  margin: 0;
+}
+.header-bg{
+  background-color: #191E32;
+  color: #FFF;
+}
+.logo{
+  color: #FFF;
+font-family: 'Akira Expanded';
+font-size: 27px;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
+text-decoration: none;
+}
+.login{
+  color: #FFF;
+  font-family: 'Akira Expanded';
+  font-size: 27px;
+  font-weight: 800;
+  line-height: normal;
+}
+.nav-bg{
+  background: var(--priamry, #2A3254);
+}
+.nav-link {
+  text-transform: uppercase;
+}
+.content-bg, .footer-bg, .about-bg, .login-bg{
+  background: var(--secondary, #111421);
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* footer */
+.copyright{
+font-family: 'Reem Kufi Fun';
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* content */
+.box, .about-box{
+  border-radius: 0px 50px;
+background: var(--header-color, #191E32);
+}
+.box svg {
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 8px;
+}
+.box-head{
+  color: #FFF;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-transform: capitalize;
+}
+.box-span{
+  color: #FFF;
+font-family: Inter;
+font-size: 11px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-transform: capitalize;
+}
+.box-p{
+  color: #FAFF00;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-transform: capitalize;
+}
+.box-content{
+  color: #FAFF00;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.bar{
+  border-radius: 15px;
+  background: var(--priamry, #2A3254);
+  padding: 15px;
+}
+.slot li {
+  list-style: none;
+}
+.slot li:hover {
+  border-bottom: 3px solid yellow;
+  color: yellow;
+  margin-bottom: -15px;
+}
+.slot-card{
+  border-radius: 8px;
+background: #2A3254;
+padding:15px;
+}
+.custom-btn{
+  border-radius: 20px;
+    color: #1E1E1E;
+    background: #FAFF00 !important;
+}
+.custom-btn:hover {
+  background: #dbdb68 !important;
+  color: black !important;
+}
+/* welcome */
+.welcome-bg{
+  background: #2A3254;
+}
+.welcome{
+  color: #fff;
+font-family: 'Azonix';
+font-size: 27px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
-.App-link {
-  color: #61dafb;
+/* about */
+.about{
+  color: #FAFF00;
+font-family: 'LEMON MILK';
+font-size: 45px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.about-copyright{
+  color: #FFF;
+font-family: 'Azonix';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.bg {
+  background: #191E32;
+}
+.form-control {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #bbb !important;
+    border: none !important;
+}
+.login-btn{
+  color: #000;
+font-family: 'Azonix';
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.text-end{
+  color: #fff;
+font-family: 'Azonix';
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.forget{
+  color: #FFF;
+    font-family: Inter;
+    padding-top: 20px;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select-bg{
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #bbb;
+  border: none;
+}
+
+.search{
+  top: -36px;
+    position: relative;
+    left: 20px;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  border-radius: 50px 0px 0px 50px;
+  background: var(--secondary, #111421) !important;
+  border-color:var(--secondary, #111421) !important;
 }
